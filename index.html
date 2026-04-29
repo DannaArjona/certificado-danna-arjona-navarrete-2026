@@ -23,11 +23,29 @@ body {
   border-radius: 12px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
   text-align: center;
+  position: relative;
 }
 
+/* LOGO CENTRADO */
 .logo {
-  width: 120px;
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto 25px auto;
+  width: 110px;
+  opacity: 0.95;
+}
+
+/* MARCA DE AGUA */
+.certificate::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('logo.png') no-repeat center;
+  background-size: 300px;
+  opacity: 0.05;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -83,8 +101,8 @@ h1 {
 
 <div class="certificate">
 
-  <!-- LOGO (puedes cambiarlo luego) -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/WorldSkills_logo.svg/512px-WorldSkills_logo.svg.png" class="logo">
+  <!-- TU LOGO -->
+  <img src="logo.png" class="logo">
 
   <h1>CERTIFICADO DE PARTICIPACIÓN</h1>
 
@@ -101,13 +119,9 @@ h1 {
     Realizado el 24 de abril de 2026 en Punta Cana
   </div>
 
-  <div class="text">
-    Documento presentado como constancia digital
-  </div>
-
   <div class="valid-box">
-    ✔ Información del certificado visible en esta página  
-    ✔ Nombre del participante: Danna Sofia Arjona Navarrete  
+    ✔ Certificado visible en esta página  
+    ✔ Nombre: Danna Sofia Arjona Navarrete  
   </div>
 
   <div class="footer">
