@@ -1,51 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Verificación de Certificado</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 350px;
-    }
-    .status {
-      color: green;
-      font-weight: bold;
-      font-size: 18px;
-      margin: 10px 0;
-    }
-    .code {
-      margin-top: 15px;
-      font-size: 12px;
-      color: gray;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Certificado</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #eef2f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.certificate {
+  background: white;
+  padding: 40px;
+  width: 800px;
+  border: 12px solid #c9a94d;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.text {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.valid-box {
+  margin-top: 25px;
+  padding: 15px;
+  border: 2px solid green;
+  border-radius: 8px;
+  color: green;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signature {
+  text-align: center;
+  font-size: 14px;
+}
+
+.line {
+  width: 200px;
+  border-top: 1px solid black;
+  margin: 5px auto;
+}
+</style>
+
 </head>
+
 <body>
 
-<div class="card">
-  <h2>🔐 Certificado Verificado</h2>
-  
-  <p><strong>Nombre:</strong> Danna Arjona</p>
-  <p><strong>Evento:</strong> WorldSkills Punta Cana</p>
-  <p><strong>Fecha:</strong> 22 - 24 Abril 2026</p>
-  <p><strong>Participación:</strong> Networking</p>
+<div class="certificate">
 
-  <div class="status">✅ Certificado válido</div>
+  <!-- LOGO (puedes cambiarlo luego) -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/WorldSkills_logo.svg/512px-WorldSkills_logo.svg.png" class="logo">
 
-  <div class="code">Código: WS-2026-45821</div>
+  <h1>CERTIFICADO DE PARTICIPACIÓN</h1>
+
+  <div class="text">Otorgado a:</div>
+
+  <div class="name">DANNA SOFIA ARJONA NAVARRETE</div>
+
+  <div class="text">
+    Por su participación en la asamblea de <br>
+    <span class="highlight">WorldSkills 2026</span>
+  </div>
+
+  <div class="text">
+    Realizado el 24 de abril de 2026 en Punta Cana
+  </div>
+
+  <div class="text">
+    Documento presentado como constancia digital
+  </div>
+
+  <div class="valid-box">
+    ✔ Información del certificado visible en esta página  
+    ✔ Nombre del participante: Danna Sofia Arjona Navarrete  
+  </div>
+
+  <div class="footer">
+    <div class="signature">
+      <div class="line"></div>
+      Firma autorizada
+    </div>
+
+    <div class="signature">
+      <div class="line"></div>
+      Dirección del evento
+    </div>
+  </div>
+
 </div>
 
 </body>
